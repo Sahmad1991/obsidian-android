@@ -414,7 +414,7 @@ public class FolderPickerActivity extends FileActivity implements FileFragment.C
         mChooseBtn = findViewById(R.id.folder_picker_btn_choose);
 
         if (mChooseBtn != null) {
-            mChooseBtn.getBackground().setColorFilter(ThemeUtils.primaryColor(this, true), PorterDuff.Mode.SRC_ATOP);
+            mChooseBtn.setBackgroundColor(ThemeUtils.primaryColor(this, true));
             mChooseBtn.setOnClickListener(this);
         }
 
